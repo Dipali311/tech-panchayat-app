@@ -1,0 +1,12 @@
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional global styling */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6; /* light gray background */
+  margin: 0;
+  padding: 0;
+}

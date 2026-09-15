@@ -1,0 +1,73 @@
+.info-site { --info-ink: #17342f; --info-green: #0d6652; --info-deep: #073e34; --info-orange: #df7935; --info-paper: #f6f5ef; --info-line: #d8e1d9; min-height: 100vh; color: var(--info-ink); background: var(--info-paper); font-family: 'DM Sans', sans-serif; }
+.info-site * { box-sizing: border-box; }
+.info-container { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+.info-gov-strip { min-height: 34px; display: flex; justify-content: space-between; align-items: center; padding: 0 max(20px, calc((100% - 1120px) / 2)); background: var(--info-deep); color: #d5e7dc; font-size: 12px; }
+.info-gov-strip span:last-child { display: flex; align-items: center; gap: 6px; color: #a6c8b5; }
+.info-header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--info-line); background: rgba(255, 253, 248, .97); }
+.info-nav-wrap { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 25px; }
+.info-brand { display: flex; align-items: center; gap: 11px; border: 0; padding: 0; background: transparent; color: var(--info-ink); cursor: pointer; text-align: left; }
+.info-brand img { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; }
+.info-brand strong, .info-brand small { display: block; }
+.info-brand strong { font-size: 19px; }
+.info-brand small { margin-top: 2px; color: #71847a; font-size: 11px; }
+.info-nav { display: flex; align-items: center; gap: 5px; }
+.info-nav button { border: 0; border-bottom: 2px solid transparent; padding: 10px 12px; color: #34554b; background: transparent; cursor: pointer; font: inherit; font-size: 14px; font-weight: 700; }
+.info-nav button:hover, .info-nav button.active { border-color: var(--info-orange); color: var(--info-green); }
+.info-nav .info-login { display: inline-flex; align-items: center; gap: 7px; margin-left: 12px; border: 0; background: var(--info-orange); color: white; }
+.info-page-hero { border-top: 4px solid var(--info-orange); padding: 68px 0 62px; background: linear-gradient(120deg, #0b5e4d, #174d5b); color: white; }
+.info-page-hero h1 { max-width: 760px; margin: 0; color: white; font: 400 clamp(32px, 5vw, 58px)/1.12 Georgia, serif; letter-spacing: -.03em; }
+.info-page-hero > div > p:last-child { max-width: 650px; margin: 20px 0 0; color: #d8e9df; font-size: 16px; line-height: 1.7; }
+.info-eyebrow { margin: 0 0 13px; color: var(--info-orange); font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.info-page-hero .info-eyebrow { color: #f3bb7e; }
+.info-content { padding: 55px 0 75px; }
+.info-content h2 { margin: 0; color: var(--info-ink); font: 400 29px/1.2 Georgia, serif; }
+.info-welcome, .info-about-grid { display: grid; grid-template-columns: 1.4fr .8fr; gap: 60px; align-items: start; margin-bottom: 68px; }
+.info-welcome > div:first-child p:not(.info-eyebrow), .info-about-grid p:not(.info-eyebrow) { max-width: 680px; color: #667c71; line-height: 1.75; }
+.info-contact-box { display: grid; gap: 10px; padding: 23px; border-left: 4px solid var(--info-orange); background: #fffdf8; box-shadow: 0 8px 24px rgba(23, 52, 47, .08); }
+.info-contact-box svg { color: var(--info-green); }
+.info-contact-box span { color: #667c71; font-size: 14px; }
+.info-contact-box button, .info-scheme-card button, .info-help button, .info-notice button { display: inline-flex; align-items: center; gap: 7px; width: fit-content; border: 0; border-bottom: 2px solid var(--info-orange); padding: 8px 0; background: transparent; color: var(--info-green); cursor: pointer; font: inherit; font-weight: 700; }
+.info-section-heading { margin-bottom: 22px; }
+.info-action-grid, .info-card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 68px; }
+.info-action-card { position: relative; display: flex; flex-direction: column; align-items: flex-start; min-height: 190px; gap: 12px; border: 1px solid var(--info-line); border-top: 3px solid var(--info-green); padding: 23px; background: #fffdf8; color: var(--info-ink); text-align: left; cursor: pointer; }
+.info-action-card:hover { border-top-color: var(--info-orange); transform: translateY(-2px); }
+.info-action-card svg:first-child { color: var(--info-orange); }
+.info-action-card span { color: #71847a; font-size: 13px; line-height: 1.55; }
+.info-action-card svg:last-child { position: absolute; right: 20px; bottom: 20px; color: var(--info-green); }
+.info-notice, .info-office, .info-callout, .info-contact-strip, .info-help { display: flex; align-items: center; justify-content: space-between; gap: 25px; padding: 25px 28px; margin-top: 30px; background: var(--info-deep); color: white; }
+.info-notice h2, .info-office h2, .info-help h2 { color: white; font-size: 25px; }
+.info-notice p:not(.info-eyebrow), .info-office p, .info-help p { color: #bad3c4; line-height: 1.6; }
+.info-notice button, .info-office strong, .info-help button { color: #f4bd7e; white-space: nowrap; }
+.info-callout { justify-content: flex-start; margin: 0 0 26px; background: #e6f1eb; color: var(--info-green); }
+.info-callout span { color: #45695c; line-height: 1.5; }
+.info-card-grid { grid-template-columns: repeat(2, 1fr); }
+.info-scheme-card { display: flex; flex-direction: column; align-items: flex-start; min-height: 245px; border: 1px solid var(--info-line); border-left: 4px solid var(--info-green); padding: 23px; background: #fffdf8; }
+.info-scheme-card h2, .info-news-card h2 { margin: 13px 0 7px; font-size: 21px; }
+.info-scheme-card small { color: #71847a; }
+.info-scheme-card p, .info-news-card p { color: #667c71; line-height: 1.6; font-size: 14px; }
+.info-scheme-card button { margin-top: auto; }
+.info-status { display: inline-block; color: var(--info-orange); font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.info-news-list, .info-faq-list { max-width: 850px; }
+.info-news-card { display: grid; grid-template-columns: 145px 1fr; gap: 25px; padding: 25px 0; border-bottom: 1px solid var(--info-line); }
+.info-news-date { display: flex; align-items: flex-start; gap: 8px; color: var(--info-green); font-size: 13px; font-weight: 700; }
+.info-news-date svg { color: var(--info-orange); }
+.info-contact-strip { justify-content: flex-start; margin-top: 42px; background: #e6f1eb; color: var(--info-green); }
+.info-contact-strip span { color: #45695c; flex: 1; }
+.info-faq { border-bottom: 1px solid var(--info-line); }
+.info-faq button { display: flex; justify-content: space-between; width: 100%; border: 0; padding: 20px 0; background: transparent; color: var(--info-ink); cursor: pointer; font: inherit; font-weight: 700; text-align: left; }
+.info-faq button svg { flex: 0 0 auto; transition: transform 150ms ease; }
+.info-faq.open button svg { transform: rotate(180deg); color: var(--info-orange); }
+.info-faq p { margin: -3px 35px 20px 0; color: #667c71; line-height: 1.7; }
+.info-help { display: block; max-width: 850px; margin-top: 42px; }
+.info-help p { max-width: 600px; }
+.info-facts { display: grid; gap: 13px; }
+.info-facts > div { display: flex; gap: 13px; align-items: flex-start; padding: 17px; border: 1px solid var(--info-line); background: #fffdf8; color: var(--info-green); }
+.info-facts span { display: grid; gap: 4px; color: #667c71; font-size: 14px; }
+.info-facts b { color: var(--info-ink); }
+.info-office { align-items: flex-start; margin-top: 0; }
+.info-office > div:last-child { min-width: 250px; }
+.info-footer { padding: 25px 0; background: #062f29; color: #d5e7dc; }
+.info-footer strong, .info-footer span { display: block; }
+.info-footer span { margin-top: 5px; color: #98b7a6; font-size: 12px; }
+.info-detail-panel h1 { margin: 0 0 10px; color: var(--gov-navy); font-family: Georgia, serif; }
+@media (max-width: 760px) { .info-container { width: min(100% - 32px, 600px); } .info-gov-strip { padding: 0 16px; } .info-gov-strip span:last-child { display: none; } .info-nav-wrap { align-items: flex-start; flex-direction: column; padding: 14px 0; } .info-nav { width: 100%; flex-wrap: wrap; gap: 2px; } .info-nav button { padding: 8px 9px; font-size: 12px; } .info-nav .info-login { margin-left: 0; } .info-page-hero { padding: 48px 0; } .info-content { padding-top: 38px; } .info-welcome, .info-about-grid, .info-action-grid, .info-card-grid { grid-template-columns: 1fr; gap: 18px; margin-bottom: 42px; } .info-notice, .info-office, .info-contact-strip { display: block; } .info-notice button, .info-office > div:last-child { margin-top: 18px; } .info-news-card { grid-template-columns: 1fr; gap: 10px; } .info-contact-strip strong { display: block; margin-top: 13px; } }
